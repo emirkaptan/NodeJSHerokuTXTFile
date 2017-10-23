@@ -33,18 +33,6 @@ function getAcResponse() {
   xhttp.send();
 }
 
-function getikinciResponse() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("GelenData").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "/oku/deneme", true);
-  xhttp.send();
-}
-
 function getKapatResponse() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
